@@ -1,4 +1,5 @@
-from agents.workbook_agent import worbook_agent
+from agents.workbook_agent import workbook_agent
 
-agent = worbook_agent()
-agent.analyze_workbook("data/SIT Extract -W1-20260625.xlsx")
+agent = workbook_agent()
+result = agent.analyze_workbook("data/SIT Extract -W1-20260625.xlsx")
+print(result)
