@@ -18,6 +18,7 @@ class execution_agent:
         else:
             pass_percentage = 0
             execution_percentage = 0
+        executed_rows = passed + failed 
         #check for total
         if(passed + failed + blocked + inprogress + unexecuted != total_rows):
             print("Warning: The sum of individual status counts does not match the total row count.")
@@ -28,6 +29,7 @@ class execution_agent:
             "blocked": blocked,
             "inprogress": inprogress,
             "unexecuted": unexecuted,
+            "executed_rows": executed_rows,
             "pass % ":pass_percentage,
             "Execution %":execution_percentage
         }
