@@ -1,6 +1,6 @@
 import pandas as pd
 class Defect_agent:
-    def _init_(self):
+    def __init__(self):
         print("Defect agent initialized")
     def defect_analyze(self,file_path,workbook_metadata):
         defect_sheet = "Defects-INPUT"
@@ -53,5 +53,6 @@ class Defect_agent:
             "open_medium_defects": open_medium_defects,
             "open_low_defects": open_low_defects
         }
+        print(defect_summary)
 
         return defect_summary
